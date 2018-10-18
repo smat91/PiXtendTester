@@ -35,3 +35,7 @@ HEADERS  += \
 
 FORMS    += \
     src/hmi.ui
+
+unix:!macx: LIBS += \
+    -lpixtend \
+    -lwiringPi
